@@ -21,7 +21,7 @@ const About: NextPage = () => {
               color: "#A71B4A",
             }}
           />
-          {t.cafeDX}
+          {t.MarketShop}
           <EndQuot
             style={{
               display: "inline",
@@ -32,12 +32,12 @@ const About: NextPage = () => {
           />
           &nbsp;
           <a
-            href="https://cafedx.com/"
+            href="https://marketshop-frontend.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-palette-side underline font-bold bg-palette-primary px-2"
           >
-            CafeDX
+            MarketShop
           </a>
         </p>
         <p className="my-4">{t.aboutEnjoy}</p>
