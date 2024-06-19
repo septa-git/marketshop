@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import en from "../locales/en";
-import fa from "../locales/fa";
+import fa from "../locales/id";
 
 export const useLanguage = () => {
   const { locale } = useRouter();
