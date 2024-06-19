@@ -23,6 +23,7 @@ const en: { [key: string]: string } = {
   bestSells: "The Best-Sells",
   mainMenu: "Main Menu",
   language: "Language: ",
+  id: "Indonesia - Id",
   en: "English - En",
   theme: "Theme: ",
   dark: "Dark",
