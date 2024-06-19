@@ -39,7 +39,7 @@ const Footer = () => {
               color: "#A71B4A",
             }}
           />
-          {t.cafeDX}
+          {t.MarketShop}
           <EndQuot
             style={{
               display: "inline",
@@ -50,12 +50,12 @@ const Footer = () => {
           />
           &nbsp;
           <a
-            href="https://cafedx.com/"
+            href="https://marketshop-frontend.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-palette-side underline font-bold bg-palette-primary px-2"
           >
-            CafeDX
+            MarketShop
           </a>
         </div>
       </div>
