@@ -8,17 +8,6 @@ An E-commerce site template, implemented with [Next.js](https://nextjs.org/) and
 
 <p>
 
-![GitHub top language](https://img.shields.io/github/languages/top/zahramirzaei/online-shop)&nbsp;
-![GitHub last commit](https://img.shields.io/github/last-commit/zahramirzaei/online-shop)&nbsp;
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/zahramirzaei/online-shop)&nbsp;
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/zahramirzaei/online-shop?display_name=tag)&nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/zahramirzaei/online-shop?color=yellow)&nbsp;
-![GitHub forks](https://img.shields.io/github/forks/zahramirzaei/online-shop)
-
-</p>
-
-<p>
-
 [Technologies](#technologies) •
 [Demo](#demo) •
 [Features](#features) •
