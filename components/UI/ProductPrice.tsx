@@ -31,7 +31,7 @@ const ProductPrice: React.FC<Props> = ({
   const textDiscountPriceSize = isLargeSize
     ? "text-md md:text-xl"
     : "text-[12px] md:text-md";
-  const justifyContent = isInSlider && locale === "fa" ? "flex-start" : "";
+  const justifyContent = isInSlider && locale === "id" ? "flex-start" : "";
   const flexDirection = isInSlider || locale === "en" ? "row" : "row-reverse";
 
   return (
@@ -48,7 +48,7 @@ const ProductPrice: React.FC<Props> = ({
               >
                 <sup className="mr-1">{locale === "en" ? "£" : ""}</sup>
                 <sub className="ml-1 text-[10px]">
-                  {locale === "fa" ? "تومان" : ""}
+                  {locale === "id" ? "Indonesia" : ""}
                 </sub>
                 {locale === "en" ? gbpCurrencyFormat(price) : irPrice}
               </del>
@@ -57,7 +57,7 @@ const ProductPrice: React.FC<Props> = ({
               >
                 <sup className="mr-1">{locale === "en" ? "£" : ""}</sup>
                 <sub className="ml-1 text-[10px]">
-                  {locale === "fa" ? "تومان" : ""}
+                  {locale === "id" ? "Indonesia" : ""}
                 </sub>
                 {locale === "en"
                   ? gbpCurrencyFormat(discountPrice)
@@ -67,9 +67,8 @@ const ProductPrice: React.FC<Props> = ({
             <span
               className="text-green-800 dark:text-green-200 ml-1 text-[12px] inline-block"
               style={{ direction: "ltr" }}
-            >{`(-%${
-              locale === "en" ? discount : changeNumbersFormatEnToFa(discount!)
-            })`}</span>
+            >{`(-%${locale === "en" ? discount : changeNumbersFormatEnToFa(discount!)
+              })`}</span>
           </div>
         ) : (
           <div>
@@ -84,7 +83,7 @@ const ProductPrice: React.FC<Props> = ({
                 {locale === "en" ? gbpCurrencyFormat(price) : irPrice}
               </span>
               <sub className="ml-1 text-[10px]">
-                {locale === "fa" ? "تومان" : ""}
+                {locale === "id" ? "Indonesia" : ""}
               </sub>
             </div>
           </div>

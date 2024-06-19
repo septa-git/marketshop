@@ -70,8 +70,8 @@ const CartBox = () => {
               <p className="text-sm">{t.payableAmount}</p>
               <p className="self-end text-sm font-bold">
                 {locale === "en"
-                  ? `£ ${gbpCurrencyFormat(cartTotalAmount)}`
-                  : `تومان ${irPrice}`}
+                  ? `Rp ${gbpCurrencyFormat(cartTotalAmount)}`
+                  : `Indonesia ${irPrice}`}
               </p>
             </div>
             {!userInfo ? (
