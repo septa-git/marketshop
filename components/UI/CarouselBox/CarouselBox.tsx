@@ -12,6 +12,7 @@ interface Props {
   children?: React.ReactNode;
   full?: boolean;
 }
+
 const CarouselBox: React.FC<Props> = ({
   title,
   className,
@@ -28,9 +29,7 @@ const CarouselBox: React.FC<Props> = ({
     centerPadding: "60px",
     slidesToShow: 5,
     slidesToScroll: 5,
-    // initialSlide: 0,
     swipeToSlide: true,
-    // rtl: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -67,19 +66,17 @@ const CarouselBox: React.FC<Props> = ({
 
   return (
     <div
-      className={`w-[100%] mx-auto my-8 flex rounded-md ${
-        full ? "flex-col" : "bg-[#37bccef9]"
-      }`}
+      className={`w-[100%] mx-auto my-8 flex rounded-md ${full ? "flex-col" : "bg-[#37bccef9]"
+        }`}
     >
       <div
         className={`flex flex-col items-center justify-around flex-grow text-sm sm:text-base  bg-cover bg-no-repeat bg-center rounded-md backdrop-blur-md ${className}`}
       >
         <h2
-          className={`text-lg  sm:text-xl font-bold ${
-            full
-              ? "text-palette-base self-start"
-              : "text-palette-primary text-center"
-          } `}
+          className={`text-lg  sm:text-xl font-bold ${full
+            ? "text-palette-base self-start"
+            : "text-palette-primary text-center"
+            } `}
         >
           {t[`${title}`]}
         </h2>
@@ -92,9 +89,8 @@ const CarouselBox: React.FC<Props> = ({
         ) : null}
       </div>
       <div
-        className={`relative ${
-          full ? "w-full mt-4" : "w-[55%] sm:w-[75%] md:w-[85%]"
-        }`}
+        className={`relative ${full ? "w-full mt-4" : "w-[55%] sm:w-[75%] md:w-[85%]"
+          }`}
       >
         <Slider {...settings}>{children}</Slider>
         <div>

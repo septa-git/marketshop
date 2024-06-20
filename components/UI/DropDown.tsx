@@ -52,13 +52,12 @@ const DropDown = forwardRef<HTMLDivElement, Props>(({ dropDown }, ref) => {
             <div
               ref={nodeRef}
               className={`origin-top rtl:mr-8 ltr:ml-8 px-2 rtl:border-r-4 ltr:border-l-4 border-slate-400
-          ${
-            state === "entering"
-              ? `animate-dropDown`
-              : state === "entered"
-              ? "scale-y-100 opacity-100"
-              : "animate-dropDownExit"
-          }
+          ${state === "entering"
+                  ? `animate-dropDown`
+                  : state === "entered"
+                    ? "scale-y-100 opacity-100"
+                    : "animate-dropDownExit"
+                }
           `}
             >
               {dropDown.subtitles.map((item, index) => {
